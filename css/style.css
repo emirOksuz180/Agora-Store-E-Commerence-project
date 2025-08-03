@@ -76,6 +76,7 @@
 .img-wrap {
   height: 240px;
   text-align: center;
+  position: relative;
 }
 
 .img-wrap img {
@@ -141,3 +142,8 @@
   color: orange;
 }
 
+.img-wrap span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

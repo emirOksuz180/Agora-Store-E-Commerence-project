@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="style.css">
-  <title>Ürün</title>
+  <title>Slider</title>
 </head>
 <body>
 
@@ -27,10 +27,10 @@
                 <a href="kategori.html" class="nav-link">Kategori</a>
               </li>
               <li class="nav-item">
-                <a href="urun.html" class="nav-link active active-border">Ürünler</a>
+                <a href="urun.html" class="nav-link ">Ürünler</a>
               </li>
               <li class="nav-item">
-                <a href="slider.html" class="nav-link">Slider</a>
+                <a href="slider.html" class="nav-link active active-border">Slider</a>
               </li>
               <li class="nav-item">
                 <a href="role.html" class="nav-link">Role</a>
@@ -67,77 +67,82 @@
 
   <main class="container my-3">
     <div class="row">
-      <div class="col-md-9">
+      <div class="col">
         <div class="card shadow">
           <div class="card-header py-1 d-flex justify-content-between align-items-center">
-            <h5 class="card-title">Ürün Ekle</h5>
-            <a href="urun.html" class="btn btn-sm btn-primary">
-              <i class="fa-solid fa-list"></i>
+            <h5 class="card-title">Sliderlar</h5>
+            <a href="sliderEkle.html" class="btn btn-sm btn-primary">
+              <i class="fa-solid fa-plus"></i>
             </a>
           </div>
           <div class="card-body">
-            <form>
-                <div class="row mb-3 mt-2">
-                  <label for="urunAdi" class="col-sm-2 col-form-label">Ürün Adı</label>
-                  <div class="col-sm-10">
-                    <input type="text" id="kategoriAdi" class="form-control">
-                  </div>
-                </div>
+            <div class="table-responsive">
+              <table class="table table-bordered cursor-pointer table-hover table spriped mb-0">
+              <thead class="table-secondary">
+                <tr>
+                  <th style="width: 20px;">ID</th>
+                  <th style="width: 200px;">Resim</th>
+                  <th>Başlık</th>
+                  <th>Aktif</th>
+                  <th>Anasayfa</th>
+                  <th>Index</th>
+                  <th style="width: 50px;"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>                  
+                  <td>1</td>
+                  <td>
+                    <img src="img/slider-1.jpeg" class="img-fluid" alt="">
+                  </td>
+                  <td>Slider 1 Başlık</td>
+                  <td>
+                    <i class="fa-solid fa-circle-check text-success"></i>
+                  </td>
+                  <td>1</td>
+                  <td class="d-flex">
+                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </td>
+                </tr>
 
-                <div class="row mb-3">
-                  <label for="urunAciklama" class="col-sm-2 col-form-label">Ürün Açıklama</label>
-                  <div class="col-sm-10">
-                    <textarea  id="urunAciklama" rows="3" class="form-control"></textarea>
-                  </div>
-                </div>
+                <tr>                  
+                  <td>2</td>
+                  <td>
+                    <img src="img/slider-2.jpeg" class="img-fluid" alt="">
+                  </td>
+                  <td>Slider 2 Başlık</td>
+                  <td>
+                    <i class="fa-solid fa-circle-check text-success"></i>
+                  </td>
+                  <td>2</td>
+                  <td class="d-flex">
+                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </td>
+                </tr>
 
-                <div class="row mb-3 mt-2">
-                  <label for="urunFiyat" class="col-sm-2 col-form-label">Fiyat</label>
-                  <div class="col-sm-10">
-                    <input type="text" id="urunFiyat" class="form-control">
-                  </div>
-                </div>
-
-                <div class="row mb-3 mt-2">
-                  <label for="urunAktif" class="col-sm-2 col-form-label">Aktif</label>
-                  <div class="col-sm-10">
-                    <input type="checkbox"  id="urunAktif" class="form-check-input">
-                  </div>
-                </div>
-
-                <div class="row mb-3 mt-2">
-                  <label for="urunAnasayfa" class="col-sm-2 col-form-label">Anasayfa</label>
-                  <div class="col-sm-10">
-                    <input type="checkbox"  id="urunAnasayfa" class="form-check-input">
-                  </div>
-                </div>
-
-                <div class="row mb-3 mt-2">
-                  <label for="urunKategori" class="col-sm-2 col-form-label">Kategori</label>
-                  <div class="col-sm-10">
-                    <select class="form-select">
-                      <option value="" selected>Seçiniz</option>
-                      <option value="">Telefon</option>
-                      <option value="">Telefon</option>
-                      <option value="">Beyaz Eşya</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <div class="col-sm-10 offset-sm-2">
-                    <button type="button" class="btn btn-primary">Kaydet</button>
-                  </div>
-                </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card shadow">
-          <div class="card-body">
-            <img src="img/1.jpeg" alt="" class="img-thumbnail">
-            <input type="file" class="form-control mt-3">
+                <tr>                  
+                  <td>3</td>
+                  <td>
+                    <img src="img/slider-3.jpeg" class="img-fluid" alt="">
+                  </td>
+                  <td>Slider 3 Başlık</td>
+                  <td>
+                    <i class="fa-solid fa-circle-check text-success"></i>
+                  </td>
+                  <td>3</td>
+                  <td class="d-flex">
+                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
           </div>
         </div>
       </div>

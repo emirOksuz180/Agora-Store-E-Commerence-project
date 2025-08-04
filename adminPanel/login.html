@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="style.css">
-  <title>Slider</title>
+  <title>Login</title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
                 <a href="urun.html" class="nav-link ">Ürünler</a>
               </li>
               <li class="nav-item">
-                <a href="slider.html" class="nav-link active active-border">Slider</a>
+                <a href="slider.html" class="nav-link">Slider</a>
               </li>
               <li class="nav-item">
                 <a href="role.html" class="nav-link">Role</a>
@@ -52,7 +52,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="login.html" class="nav-link">Giriş</a>
+                <a href="login.html" class="nav-link active active-border">Giriş</a>
               </li>
               <li class="nav-item">
                 <a href="register.html" class="nav-link">Hesap Oluştur</a>
@@ -67,85 +67,42 @@
 
   <main class="container my-3">
     <div class="row">
-      <div class="col">
+
+      <div class="col-md-3 my-auto rounded">
         <div class="card shadow">
-          <div class="card-header py-1 d-flex justify-content-between align-items-center">
-            <h5 class="card-title">Sliderlar</h5>
-            <a href="sliderEkle.html" class="btn btn-sm btn-primary">
-              <i class="fa-solid fa-plus"></i>
-            </a>
-          </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-bordered cursor-pointer table-hover table spriped mb-0">
-              <thead class="table-secondary">
-                <tr>
-                  <th style="width: 20px;">ID</th>
-                  <th style="width: 200px;">Resim</th>
-                  <th>Başlık</th>
-                  <th>Aktif</th>
-                  <th>Anasayfa</th>
-                  <th>Index</th>
-                  <th style="width: 50px;"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>                  
-                  <td>1</td>
-                  <td>
-                    <img src="img/slider-1.jpeg" class="img-fluid" alt="">
-                  </td>
-                  <td>Slider 1 Başlık</td>
-                  <td>
-                    <i class="fa-solid fa-circle-check text-success"></i>
-                  </td>
-                  <td>1</td>
-                  <td class="d-flex">
-                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>                  
-                  <td>2</td>
-                  <td>
-                    <img src="img/slider-2.jpeg" class="img-fluid" alt="">
-                  </td>
-                  <td>Slider 2 Başlık</td>
-                  <td>
-                    <i class="fa-solid fa-circle-check text-success"></i>
-                  </td>
-                  <td>2</td>
-                  <td class="d-flex">
-                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>                  
-                  <td>3</td>
-                  <td>
-                    <img src="img/slider-3.jpeg" class="img-fluid" alt="">
-                  </td>
-                  <td>Slider 3 Başlık</td>
-                  <td>
-                    <i class="fa-solid fa-circle-check text-success"></i>
-                  </td>
-                  <td>3</td>
-                  <td class="d-flex">
-                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
+          <div class="card-body rounded">
+            <img src="img/user.png"  alt="" class="img-fluid">
           </div>
         </div>
       </div>
+
+      <div class="col-md-9 my-auto">
+        <div class="card shadow">
+          <div class="card-header py-1">
+            <h5 class="card-title">Login</h5>
+          </div>
+          <div class="card-body">
+
+            <div class="alert alert-danger">
+              <i class="fa-solid fa-circle-exclamtion"></i>Email ya da parola hatalı
+            </div>
+            <form>
+                <div class="mb-3 mt-2">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+
+                <div class="mb-3 mt-2">
+                    <label for="password" class="col-sm-2 col-form-label">Parola</label>
+                    <input type="password" id="password" class="form-control">
+                </div>
+
+                <button type="button" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </main>
 

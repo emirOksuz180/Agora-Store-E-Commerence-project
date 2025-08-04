@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="style.css">
-  <title>Slider</title>
+  <title>Ürün</title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
                 <a href="urun.html" class="nav-link ">Ürünler</a>
               </li>
               <li class="nav-item">
-                <a href="slider.html" class="nav-link active active-border">Slider</a>
+                <a href="slider.html" class="nav-link">Slider</a>
               </li>
               <li class="nav-item">
                 <a href="role.html" class="nav-link">Role</a>
@@ -39,7 +39,7 @@
                 <a href="kullanici.html" class="nav-link">Kullanıcı</a>
               </li>
               <li class="nav-item">
-                <a href="siparis.html" class="nav-link">Sipariş</a>
+                <a href="siparis.html" class="nav-link active active-border">Sipariş</a>
               </li>
             </ul>
 
@@ -69,74 +69,94 @@
     <div class="row">
       <div class="col">
         <div class="card shadow">
-          <div class="card-header py-1 d-flex justify-content-between align-items-center">
-            <h5 class="card-title">Sliderlar</h5>
-            <a href="sliderEkle.html" class="btn btn-sm btn-primary">
-              <i class="fa-solid fa-plus"></i>
-            </a>
+          <div class="card-header py-1">
+            <h5 class="card-title">Siparişler</h5>
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-bordered cursor-pointer table-hover table spriped mb-0">
+              <table class="table table-bordered table spriped mb-0">
               <thead class="table-secondary">
                 <tr>
-                  <th style="width: 20px;">ID</th>
-                  <th style="width: 200px;">Resim</th>
-                  <th>Başlık</th>
-                  <th>Aktif</th>
-                  <th>Anasayfa</th>
-                  <th>Index</th>
-                  <th style="width: 50px;"></th>
+                  <th>Sipariş Id</th>
+                  <th>Username</th>
+                  <th>Toplam</th>
+                  <th>Tarih</th>
+                  <th>Durum</th>
+                  <th style="width: 40px;"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>                  
-                  <td>1</td>
+                  <td>5</td>
+                  <td>emirÖksüz</td>
+                  <td>2000 ₺</td>
+                  <td>04.08.2026</td>
                   <td>
-                    <img src="img/slider-1.jpeg" class="img-fluid" alt="">
+                    <span class="badge bg-success">Teslim Edildi</span>
                   </td>
-                  <td>Slider 1 Başlık</td>
                   <td>
-                    <i class="fa-solid fa-circle-check text-success"></i>
-                  </td>
-                  <td>1</td>
-                  <td class="d-flex">
-                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
-                      <i class="fa-solid fa-pen-to-square"></i>
+                    <a href="siparisDetay.html" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-right-long"></i>
                     </a>
                   </td>
                 </tr>
 
-                <tr>                  
-                  <td>2</td>
+                <tr>
+                  <td>6</td>
+                  <td>emirÖksüz</td>
+                  <td>2000 ₺</td>
+                  <td>04.08.2026</td>
                   <td>
-                    <img src="img/slider-2.jpeg" class="img-fluid" alt="">
+                    <span class="badge bg-primary">Onay Bekliyor</span>
                   </td>
-                  <td>Slider 2 Başlık</td>
                   <td>
-                    <i class="fa-solid fa-circle-check text-success"></i>
-                  </td>
-                  <td>2</td>
-                  <td class="d-flex">
-                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
-                      <i class="fa-solid fa-pen-to-square"></i>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-right-long"></i>
                     </a>
                   </td>
                 </tr>
 
-                <tr>                  
-                  <td>3</td>
+                <tr>
+                  <td>7</td>
+                  <td>emirÖksüz</td>
+                  <td>2000 ₺</td>
+                  <td>04.08.2026</td>
                   <td>
-                    <img src="img/slider-3.jpeg" class="img-fluid" alt="">
+                    <span class="badge bg-danger">İptal Edildi</span>
                   </td>
-                  <td>Slider 3 Başlık</td>
                   <td>
-                    <i class="fa-solid fa-circle-check text-success"></i>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-right-long"></i>
+                    </a>
                   </td>
-                  <td>3</td>
-                  <td class="d-flex">
-                    <a href="sliderEkle.html" class="btn btn-primary btn-sm">
-                      <i class="fa-solid fa-pen-to-square"></i>
+                </tr>
+
+                <tr>
+                  <td>8</td>
+                  <td>emirÖksüz</td>
+                  <td>2000 ₺</td>
+                  <td>04.08.2026</td>
+                  <td>
+                    <span class="badge bg-primary">Onay Bekliyor</span>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-right-long"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>9</td>
+                  <td>emirÖksüz</td>
+                  <td>2000 ₺</td>
+                  <td>04.08.2026</td>
+                  <td>
+                    <span class="badge bg-primary">Onay Bekliyor</span>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-right-long"></i>
                     </a>
                   </td>
                 </tr>
